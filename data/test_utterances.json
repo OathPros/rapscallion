@@ -1,0 +1,26 @@
+[
+  {
+    "message": "Our digital signage in Vari Hall is showing hacked content, this is urgent",
+    "expected_route": "incident_escalation"
+  },
+  {
+    "message": "Please reset my Duo because I got a new phone",
+    "expected_route": "service_request"
+  },
+  {
+    "message": "How do I set up Wi-Fi on my laptop?",
+    "expected_route": "guided_support"
+  },
+  {
+    "message": "What are the library hours this week?",
+    "expected_route": "knowledge_answer"
+  },
+  {
+    "message": "Need shared mailbox access for admissions inbox",
+    "expected_route": "service_request"
+  },
+  {
+    "message": "I cannot access eClass course materials, what steps should I try?",
+    "expected_route": "guided_support"
+  }
+]

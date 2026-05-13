@@ -1,0 +1,66 @@
+[
+  {
+    "id": "svc_duo_reset",
+    "name": "Duo device reset",
+    "aliases": ["duo reset", "reset duo"],
+    "keywords": ["duo", "multi-factor", "mfa", "new phone"],
+    "requires_state_change": true,
+    "required_fields": ["student_or_staff_id", "device_type"]
+  },
+  {
+    "id": "svc_m365_access",
+    "name": "Microsoft 365 access",
+    "aliases": ["office 365", "m365"],
+    "keywords": ["microsoft 365", "outlook", "teams", "onedrive"],
+    "requires_state_change": true,
+    "required_fields": ["student_or_staff_id", "department"]
+  },
+  {
+    "id": "svc_website_update",
+    "name": "Website content update",
+    "aliases": ["update website", "web edit"],
+    "keywords": ["website", "content", "page", "publish"],
+    "requires_state_change": true,
+    "required_fields": ["page_url", "requested_change"]
+  },
+  {
+    "id": "svc_eclass_access",
+    "name": "eClass access issue",
+    "aliases": ["eclass login", "moodle access"],
+    "keywords": ["eclass", "course", "enrollment", "cannot access"],
+    "requires_state_change": false,
+    "required_fields": []
+  },
+  {
+    "id": "svc_shared_mailbox",
+    "name": "Shared mailbox access",
+    "aliases": ["shared inbox", "shared email"],
+    "keywords": ["shared mailbox", "outlook permissions", "mailbox access"],
+    "requires_state_change": true,
+    "required_fields": ["mailbox_name", "manager_approval"]
+  },
+  {
+    "id": "svc_digital_signage",
+    "name": "Digital signage takeover",
+    "aliases": ["display override", "signage issue"],
+    "keywords": ["digital signage", "screen hacked", "wrong content", "takeover"],
+    "requires_state_change": true,
+    "required_fields": ["building_location", "screen_id"]
+  },
+  {
+    "id": "svc_wifi_setup",
+    "name": "Wi-Fi setup",
+    "aliases": ["wifi config", "eduroam setup"],
+    "keywords": ["wifi", "wi-fi", "wireless", "eduroam"],
+    "requires_state_change": false,
+    "required_fields": []
+  },
+  {
+    "id": "svc_software_install",
+    "name": "Software installation",
+    "aliases": ["install app", "new software"],
+    "keywords": ["software", "install", "license", "application"],
+    "requires_state_change": true,
+    "required_fields": ["software_name", "device_asset_tag"]
+  }
+]
