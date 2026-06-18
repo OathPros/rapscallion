@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>York Service Router</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">York / KNOWIT</p>
+        <h1>York Service Router</h1>
+        <p class="subtitle">Classify service messages into the right support path.</p>
+      </header>
+
+      <section class="card" aria-labelledby="classifier-heading">
+        <h2 id="classifier-heading">Classify a request</h2>
+        <p class="helper-text">Enter a message and send it to the router API.</p>
+
+        <label for="message" class="label">Service message</label>
+        <textarea id="message" name="message" rows="7" placeholder="Describe the issue or request..." aria-describedby="status"></textarea>
+
+        <div class="actions">
+          <button id="submit-btn" class="btn btn-primary" type="button">Classify request</button>
+          <button id="clear-btn" class="btn btn-secondary" type="button">Clear</button>
+        </div>
+
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section class="card" aria-labelledby="examples-heading">
+        <h2 id="examples-heading">Example messages</h2>
+        <div id="examples" class="examples" role="list"></div>
+      </section>
+
+      <section id="result-card" class="card result-card" hidden aria-labelledby="result-heading">
+        <h2 id="result-heading">Classification result</h2>
+        <dl id="result-fields" class="result-grid"></dl>
+
+        <details class="raw-json">
+          <summary>View raw JSON response</summary>
+          <pre id="raw-json"></pre>
+        </details>
+      </section>
+    </main>
+
+    <script src="/static/app.js" defer></script>
+  </body>
+</html>
